@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="pallet">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>356</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="heading_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.Apple SD Gothic NeoI</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Решение уравнения теплопроводности</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calculate_button">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>450</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.Apple SD Gothic NeoI</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Посчитать</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_D">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D - коэффициент диффузии</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_N">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>160</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>N - количество узлов сетки по X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_dt">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>200</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>dt - шаг по времени</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Nt">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>240</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nt - количество шагов по времени</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_U0">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>U0 - начальное условие</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_F_u_t">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>320</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>F(u(x,t), t) - воздействие</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_S">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>231</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>S - количество итераций</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="gt_D">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>113</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="gt_N">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>153</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="gt_dt">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>193</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="gt_Nt">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>233</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="gt_U0">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>273</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="gt_F_u_t">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>313</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="gt_S">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>353</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rB_heat_map">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>405</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Тепловая карта</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rB_animate_wave">
+    <property name="geometry">
+     <rect>
+      <x>155</x>
+      <y>405</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Анимация профиля волны</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="surface_output">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>100</y>
+      <width>391</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
